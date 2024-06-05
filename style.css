@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.wuwa-container {
+    width: 85vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border: 5px solid rgb(36, 46, 46);
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details{
+    text-align: center;
+}
+
+#baizhi .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jianxin .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.rarity{
+    font-size: 1.5rem;
+}
+
+img{
+    width: 128px;
+}
+
+.description{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#baizhi{
+    background-color: rgb(65, 174, 251);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#sephiroth{
+    background-color: rgb(180, 107, 255);
+}
+
+#danjin{
+    background-color: rgb(230, 73, 166);
+}
+
+#jianxin{
+    background-color: rgb(85, 253, 181);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+#jianxin img {
+    margin-right: 5px;
+}
+
+#rover{
+    background-color: rgb(248, 229, 108);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+@media (max-width:950px) {
+    .wuwa-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #baizhi{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #baizhi .details {
+        flex-direction: column;
+    }
+
+    #jianxin .details {
+        flex-direction: column;
+    }
+
+    #sephiroth {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #danjin {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #jianxin {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #rover {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #rover .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:750px) {
+    .wuwa-container {
+        grid-template-columns: 1fr;
+    }
+
+    #baizhi {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #sephiroth {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #danjin {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #jianxin {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #rover {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #baizhi .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #sephiroth .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #danjin .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #jianxin .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #rover .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
